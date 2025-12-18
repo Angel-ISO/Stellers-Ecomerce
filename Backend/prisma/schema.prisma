@@ -1,0 +1,187 @@
+// Prisma schema for Stellers E-commerce (Supabase)
+
+generator client {
+  provider = "prisma-client-js"
+  binaryTargets = ["native", "debian-openssl-1.1.x"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DIRECT_URL")
+}
+
+enum StoreStatus {
+  PENDING
+  APPROVED
+  REJECTED
+  BLOCKED
+}
+
+enum OrderStatus {
+  PENDING
+  PAID
+  SHIPPED
+  DELIVERED
+  CANCELLED
+}
+
+model UserProfile {
+  id          String   @id @default(uuid())
+  displayName String?
+  bio         String?
+  avatarUrl   String?
+  isModerator Boolean  @default(false)
+  isBanned    Boolean  @default(false)
+  isSeller    Boolean  @default(false)
+  preferences Json?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  store            Store?
+  buyerOrders      Order[]        @relation("UserOrders")
+  sellerOrders     Order[]        @relation("SellerOrders")
+  reviews          Review[]       @relation("UserReviews")
+  
+  // Nuevas relaciones para el chat
+  buyerChats       Chat[]         @relation("BuyerChats")
+  sellerChats      Chat[]         @relation("SellerChats")
+  sentMessages     ChatMessage[]  @relation("SentChatMessages")
+
+  @@map("user_profiles")
+}
+
+model Store {
+  id          String      @id @default(cuid())
+  ownerId     String      @unique
+  name        String
+  description String?
+  logoUrl     String?
+  status      StoreStatus @default(PENDING)
+  createdAt   DateTime    @default(now())
+
+  owner    UserProfile @relation(fields: [ownerId], references: [id])
+  products Product[]
+  reviews  Review[]
+
+  @@map("stores")
+}
+
+model Product {
+  id          String    @id @default(cuid())
+  storeId     String
+  categoryId  String?
+  name        String
+  description String?
+  price       Float
+  stock       Int
+  imageUrls   String[]
+  isActive    Boolean   @default(true)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  deletedAt   DateTime?
+
+  store      Store       @relation(fields: [storeId], references: [id])
+  category   Category?   @relation(fields: [categoryId], references: [id])
+  reviews    Review[]
+  orderItems OrderItem[]
+  chats      Chat[]      // Nueva relación
+
+  @@index([storeId, deletedAt])
+  @@index([categoryId])
+  @@index([price])
+  @@index([createdAt])
+  @@map("products")
+}
+
+model Category {
+  id       String     @id @default(cuid())
+  name     String
+  parentId String?
+  children Category[] @relation("CategoryToCategory")
+  parent   Category?  @relation("CategoryToCategory", fields: [parentId], references: [id])
+  products Product[]
+
+  @@map("categories")
+}
+
+model Order {
+  id        String      @id @default(cuid())
+  buyerId   String
+  sellerId  String
+  total     Float
+  status    OrderStatus @default(PENDING)
+  createdAt DateTime    @default(now())
+  updatedAt DateTime    @updatedAt
+
+  buyer    UserProfile @relation("UserOrders", fields: [buyerId], references: [id])
+  seller   UserProfile @relation("SellerOrders", fields: [sellerId], references: [id])
+  items    OrderItem[]
+
+  @@map("orders")
+}
+
+model OrderItem {
+  id        String @id @default(cuid())
+  orderId   String
+  productId String
+  quantity  Int
+  unitPrice Float
+
+  order   Order   @relation(fields: [orderId], references: [id])
+  product Product @relation(fields: [productId], references: [id])
+
+  @@map("order_items")
+}
+
+model Review {
+  id         String   @id @default(cuid())
+  reviewerId String
+  productId  String?
+  storeId    String?
+  rating     Int
+  comment    String?
+  createdAt  DateTime @default(now())
+
+  reviewer UserProfile @relation("UserReviews", fields: [reviewerId], references: [id])
+  product  Product?    @relation(fields: [productId], references: [id])
+  store    Store?      @relation(fields: [storeId], references: [id])
+
+  @@unique([reviewerId, productId])
+  @@map("reviews")
+}
+
+model Chat {
+  id         String   @id @default(cuid())
+  productId  String
+  buyerId    String
+  sellerId   String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  product  Product      @relation(fields: [productId], references: [id])
+  buyer    UserProfile  @relation("BuyerChats", fields: [buyerId], references: [id])
+  seller   UserProfile  @relation("SellerChats", fields: [sellerId], references: [id])
+  messages ChatMessage[]
+
+  @@unique([productId, buyerId, sellerId])
+  @@index([productId])
+  @@index([buyerId])
+  @@index([sellerId])
+  @@map("chats")
+}
+
+model ChatMessage {
+  id        String   @id @default(cuid())
+  chatId    String
+  senderId  String
+  content   String
+  isRead    Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  chat   Chat        @relation(fields: [chatId], references: [id], onDelete: Cascade)
+  sender UserProfile @relation("SentChatMessages", fields: [senderId], references: [id])
+
+  @@index([chatId, createdAt])
+  @@index([senderId])
+  @@map("chat_messages")
+}

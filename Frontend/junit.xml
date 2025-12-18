@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="187" failures="0" errors="0" time="8.171">
+  <testsuite name="ProductService" errors="0" failures="0" skipped="0" timestamp="2025-12-10T03:30:29" time="1.531" tests="7">
+    <testcase classname="ProductService getProducts should fetch all products" name="ProductService getProducts should fetch all products" time="0.02">
+    </testcase>
+    <testcase classname="ProductService getProducts should fetch products with params" name="ProductService getProducts should fetch products with params" time="0.003">
+    </testcase>
+    <testcase classname="ProductService getProduct should fetch a single product by id" name="ProductService getProduct should fetch a single product by id" time="0.006">
+    </testcase>
+    <testcase classname="ProductService createProduct should create a new product" name="ProductService createProduct should create a new product" time="0.005">
+    </testcase>
+    <testcase classname="ProductService updateProduct should update an existing product" name="ProductService updateProduct should update an existing product" time="0.003">
+    </testcase>
+    <testcase classname="ProductService deleteProduct should delete a product" name="ProductService deleteProduct should delete a product" time="0.003">
+    </testcase>
+    <testcase classname="ProductService getMyStoreProducts should fetch products from my store" name="ProductService getMyStoreProducts should fetch products from my store" time="0.004">
+    </testcase>
+  </testsuite>
+  <testsuite name="Alert utilities" errors="0" failures="0" skipped="0" timestamp="2025-12-10T03:30:29" time="1.58" tests="7">
+    <testcase classname="Alert utilities showAlert should call Swal.fire with correct parameters" name="Alert utilities showAlert should call Swal.fire with correct parameters" time="0.022">
+    </testcase>
+    <testcase classname="Alert utilities showAlert should use default values for optional parameters" name="Alert utilities showAlert should use default values for optional parameters" time="0.005">
+    </testcase>
+    <testcase classname="Alert utilities showSuccessAlert should show success alert with correct message" name="Alert utilities showSuccessAlert should show success alert with correct message" time="0.002">
+    </testcase>
+    <testcase classname="Alert utilities showErrorAlert should show error alert with correct message" name="Alert utilities showErrorAlert should show error alert with correct message" time="0.001">
+    </testcase>
+    <testcase classname="Alert utilities showWarningAlert should show warning alert with correct message" name="Alert utilities showWarningAlert should show warning alert with correct message" time="0.001">
+    </testcase>
+    <testcase classname="Alert utilities showConfirmationAlert should show confirmation alert with default button text" name="Alert utilities showConfirmationAlert should show confirmation alert with default button text" time="0.002">
+    </testcase>
+    <testcase classname="Alert utilities showConfirmationAlert should show confirmation alert with custom button text" name="Alert utilities showConfirmationAlert should show confirmation alert with custom button text" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="AuthState" errors="0" failures="0" skipped="0" timestamp="2025-12-10T03:30:30" time="0.246" tests="11">
+    <testcase classname="AuthState Mock functionality should allow setting user" name="AuthState Mock functionality should allow setting user" time="0.003">
+    </testcase>
+    <testcase classname="AuthState Mock functionality should allow setting loading state" name="AuthState Mock functionality should allow setting loading state" time="0.002">
+    </testcase>
+    <testcase classname="AuthState Mock functionality should call logout" name="AuthState Mock functionality should call logout" time="0.002">
+    </testcase>
+    <testcase classname="AuthState Mock functionality should call hasRole" name="AuthState Mock functionality should call hasRole" time="0.004">
+    </testcase>
+    <testcase classname="AuthState Mock functionality should call isSeller" name="AuthState Mock functionality should call isSeller" time="0.001">
+    </testcase>
+    <testcase classname="AuthState Mock functionality should call isModerator" name="AuthState Mock functionality should call isModerator" time="0.002">
+    </testcase>
+    <testcase classname="AuthState Mock functionality should call isBanned" name="AuthState Mock functionality should call isBanned" time="0">
+    </testcase>
+    <testcase classname="AuthState Mock functionality should have displayName property" name="AuthState Mock functionality should have displayName property" time="0.006">
+    </testcase>
+    <testcase classname="AuthState Mock functionality should call initialize" name="AuthState Mock functionality should call initialize" time="0.002">
+    </testcase>
+    <testcase classname="AuthState Mock functionality should call setUser" name="AuthState Mock functionality should call setUser" time="0.001">
+    </testcase>
+    <testcase classname="AuthState Mock functionality should call canEditProduct" name="AuthState Mock functionality should call canEditProduct" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="ConfirmStore" errors="0" failures="0" skipped="0" timestamp="2025-12-10T03:30:31" time="0.333" tests="18">
+    <testcase classname="ConfirmStore confirm should open dialog with provided message" name="ConfirmStore confirm should open dialog with provided message" time="0.01">
+    </testcase>
+    <testcase classname="ConfirmStore confirm should use default title when not provided" name="ConfirmStore confirm should use default title when not provided" time="0.003">
+    </testcase>
+    <testcase classname="ConfirmStore confirm should use custom title when provided" name="ConfirmStore confirm should use custom title when provided" time="0.001">
+    </testcase>
+    <testcase classname="ConfirmStore confirm should use default button texts when not provided" name="ConfirmStore confirm should use default button texts when not provided" time="0.002">
+    </testcase>
+    <testcase classname="ConfirmStore confirm should use custom button texts when provided" name="ConfirmStore confirm should use custom button texts when provided" time="0.001">
+    </testcase>
+    <testcase classname="ConfirmStore confirm should set variant to danger" name="ConfirmStore confirm should set variant to danger" time="0.001">
+    </testcase>
+    <testcase classname="ConfirmStore confirm should set variant to warning" name="ConfirmStore confirm should set variant to warning" time="0.002">
+    </testcase>
+    <testcase classname="ConfirmStore confirm should default variant to default" name="ConfirmStore confirm should default variant to default" time="0.001">
+    </testcase>
+    <testcase classname="ConfirmStore confirm should return a promise" name="ConfirmStore confirm should return a promise" time="0.001">
+    </testcase>
+    <testcase classname="ConfirmStore handleConfirm should close dialog" name="ConfirmStore handleConfirm should close dialog" time="0.006">
+    </testcase>
+    <testcase classname="ConfirmStore handleConfirm should resolve promise with true" name="ConfirmStore handleConfirm should resolve promise with true" time="0.002">
+    </testcase>
+    <testcase classname="ConfirmStore handleConfirm should clear resolvePromise after confirming" name="ConfirmStore handleConfirm should clear resolvePromise after confirming" time="0.002">
+    </testcase>
+    <testcase classname="ConfirmStore handleConfirm should not fail when no promise exists" name="ConfirmStore handleConfirm should not fail when no promise exists" time="0.002">
+    </testcase>
+    <testcase classname="ConfirmStore handleCancel should close dialog" name="ConfirmStore handleCancel should close dialog" time="0.002">
+    </testcase>
+    <testcase classname="ConfirmStore handleCancel should resolve promise with false" name="ConfirmStore handleCancel should resolve promise with false" time="0.002">
+    </testcase>
+    <testcase classname="ConfirmStore handleCancel should clear resolvePromise after canceling" name="ConfirmStore handleCancel should clear resolvePromise after canceling" time="0.003">
+    </testcase>
+    <testcase classname="ConfirmStore handleCancel should not fail when no promise exists" name="ConfirmStore handleCancel should not fail when no promise exists" time="0.002">
+    </testcase>
+    <testcase classname="ConfirmStore integration should handle multiple sequential confirms" name="ConfirmStore integration should handle multiple sequential confirms" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="ToastStore" errors="0" failures="0" skipped="0" timestamp="2025-12-10T03:30:29" time="2.499" tests="12">
+    <testcase classname="ToastStore show should add toast to store" name="ToastStore show should add toast to store" time="0.034">
+    </testcase>
+    <testcase classname="ToastStore show should generate unique id for each toast" name="ToastStore show should generate unique id for each toast" time="0.005">
+    </testcase>
+    <testcase classname="ToastStore show should auto-remove toast after duration" name="ToastStore show should auto-remove toast after duration" time="0.005">
+    </testcase>
+    <testcase classname="ToastStore show should not auto-remove toast when duration is 0" name="ToastStore show should not auto-remove toast when duration is 0" time="0.005">
+    </testcase>
+    <testcase classname="ToastStore show should use default duration of 3000ms" name="ToastStore show should use default duration of 3000ms" time="0.004">
+    </testcase>
+    <testcase classname="ToastStore success should create success toast" name="ToastStore success should create success toast" time="0.021">
+    </testcase>
+    <testcase classname="ToastStore success should use custom duration" name="ToastStore success should use custom duration" time="0.004">
+    </testcase>
+    <testcase classname="ToastStore error should create error toast" name="ToastStore error should create error toast" time="0.004">
+    </testcase>
+    <testcase classname="ToastStore warning should create warning toast" name="ToastStore warning should create warning toast" time="0.01">
+    </testcase>
+    <testcase classname="ToastStore info should create info toast" name="ToastStore info should create info toast" time="0.018">
+    </testcase>
+    <testcase classname="ToastStore remove should remove toast by id" name="ToastStore remove should remove toast by id" time="0.004">
+    </testcase>
+    <testcase classname="ToastStore remove should not fail when removing non-existent id" name="ToastStore remove should not fail when removing non-existent id" time="0.035">
+    </testcase>
+  </testsuite>
+  <testsuite name="CategoryService" errors="0" failures="0" skipped="0" timestamp="2025-12-10T03:30:29" time="2.178" tests="6">
+    <testcase classname="CategoryService getAllCategories should fetch all categories" name="CategoryService getAllCategories should fetch all categories" time="0.043">
+    </testcase>
+    <testcase classname="CategoryService getCategoryById should fetch a single category by id" name="CategoryService getCategoryById should fetch a single category by id" time="0.003">
+    </testcase>
+    <testcase classname="CategoryService createCategory should create a new category" name="CategoryService createCategory should create a new category" time="0.003">
+    </testcase>
+    <testcase classname="CategoryService createCategory should create a subcategory with parentId" name="CategoryService createCategory should create a subcategory with parentId" time="0.01">
+    </testcase>
+    <testcase classname="CategoryService updateCategory should update a category" name="CategoryService updateCategory should update a category" time="0.003">
+    </testcase>
+    <testcase classname="CategoryService deleteCategory should delete a category" name="CategoryService deleteCategory should delete a category" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="SellerRequestService" errors="0" failures="0" skipped="0" timestamp="2025-12-10T03:30:30" time="1.699" tests="6">
+    <testcase classname="SellerRequestService createRequest should create a seller request" name="SellerRequestService createRequest should create a seller request" time="0.036">
+    </testcase>
+    <testcase classname="SellerRequestService getPendingRequests should fetch all pending requests" name="SellerRequestService getPendingRequests should fetch all pending requests" time="0.012">
+    </testcase>
+    <testcase classname="SellerRequestService getMyRequest should fetch current user request" name="SellerRequestService getMyRequest should fetch current user request" time="0.003">
+    </testcase>
+    <testcase classname="SellerRequestService getMyRequest should return null if no request exists" name="SellerRequestService getMyRequest should return null if no request exists" time="0.005">
+    </testcase>
+    <testcase classname="SellerRequestService approveRequest should approve a seller request" name="SellerRequestService approveRequest should approve a seller request" time="0.002">
+    </testcase>
+    <testcase classname="SellerRequestService rejectRequest should reject a seller request" name="SellerRequestService rejectRequest should reject a seller request" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="Utils" errors="0" failures="0" skipped="0" timestamp="2025-12-10T03:30:30" time="1.472" tests="18">
+    <testcase classname="Utils cn should merge class names" name="Utils cn should merge class names" time="0.034">
+    </testcase>
+    <testcase classname="Utils cn should handle conflicting classes" name="Utils cn should handle conflicting classes" time="0.005">
+    </testcase>
+    <testcase classname="Utils cn should handle conditional classes" name="Utils cn should handle conditional classes" time="0.002">
+    </testcase>
+    <testcase classname="Utils cn should handle arrays" name="Utils cn should handle arrays" time="0.002">
+    </testcase>
+    <testcase classname="Utils cn should handle empty input" name="Utils cn should handle empty input" time="0.003">
+    </testcase>
+    <testcase classname="Utils formatCurrency should format integer as currency" name="Utils formatCurrency should format integer as currency" time="0.04">
+    </testcase>
+    <testcase classname="Utils formatCurrency should format decimal as currency" name="Utils formatCurrency should format decimal as currency" time="0.003">
+    </testcase>
+    <testcase classname="Utils formatCurrency should format zero as currency" name="Utils formatCurrency should format zero as currency" time="0.001">
+    </testcase>
+    <testcase classname="Utils formatCurrency should format negative number as currency" name="Utils formatCurrency should format negative number as currency" time="0.002">
+    </testcase>
+    <testcase classname="Utils formatCurrency should format large numbers as currency" name="Utils formatCurrency should format large numbers as currency" time="0.003">
+    </testcase>
+    <testcase classname="Utils formatDate should format date string" name="Utils formatDate should format date string" time="0.014">
+    </testcase>
+    <testcase classname="Utils formatDate should format Date object" name="Utils formatDate should format Date object" time="0.004">
+    </testcase>
+    <testcase classname="Utils formatDate should format ISO string" name="Utils formatDate should format ISO string" time="0.003">
+    </testcase>
+    <testcase classname="Utils formatNumber should format integer" name="Utils formatNumber should format integer" time="0.003">
+    </testcase>
+    <testcase classname="Utils formatNumber should format large number" name="Utils formatNumber should format large number" time="0.002">
+    </testcase>
+    <testcase classname="Utils formatNumber should format decimal number" name="Utils formatNumber should format decimal number" time="0.004">
+    </testcase>
+    <testcase classname="Utils formatNumber should format zero" name="Utils formatNumber should format zero" time="0.001">
+    </testcase>
+    <testcase classname="Utils formatNumber should format negative number" name="Utils formatNumber should format negative number" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="RestServices" errors="0" failures="0" skipped="0" timestamp="2025-12-10T03:30:30" time="1.786" tests="18">
+    <testcase classname="RestServices GET requests should make successful GET request" name="RestServices GET requests should make successful GET request" time="0.024">
+    </testcase>
+    <testcase classname="RestServices GET requests should include auth token in headers when available" name="RestServices GET requests should include auth token in headers when available" time="0.003">
+    </testcase>
+    <testcase classname="RestServices GET requests should throw error on failed GET request" name="RestServices GET requests should throw error on failed GET request" time="0.061">
+    </testcase>
+    <testcase classname="RestServices POST requests should make successful POST request" name="RestServices POST requests should make successful POST request" time="0.005">
+    </testcase>
+    <testcase classname="RestServices POST requests should throw error on failed POST request" name="RestServices POST requests should throw error on failed POST request" time="0.004">
+    </testcase>
+    <testcase classname="RestServices POST requests should log and throw when POST returns non-JSON error" name="RestServices POST requests should log and throw when POST returns non-JSON error" time="0.007">
+    </testcase>
+    <testcase classname="RestServices PUT requests should make successful PUT request" name="RestServices PUT requests should make successful PUT request" time="0.009">
+    </testcase>
+    <testcase classname="RestServices PUT requests should throw error on failed PUT request" name="RestServices PUT requests should throw error on failed PUT request" time="0.005">
+    </testcase>
+    <testcase classname="RestServices PUT requests should throw error on failed PUT request with JSON error" name="RestServices PUT requests should throw error on failed PUT request with JSON error" time="0.004">
+    </testcase>
+    <testcase classname="RestServices PATCH requests should make successful PATCH request" name="RestServices PATCH requests should make successful PATCH request" time="0.004">
+    </testcase>
+    <testcase classname="RestServices PATCH requests should throw error on failed PATCH request with JSON error" name="RestServices PATCH requests should throw error on failed PATCH request with JSON error" time="0.006">
+    </testcase>
+    <testcase classname="RestServices PATCH requests should throw error on failed PATCH request with plain text" name="RestServices PATCH requests should throw error on failed PATCH request with plain text" time="0.007">
+    </testcase>
+    <testcase classname="RestServices DELETE requests should make successful DELETE request" name="RestServices DELETE requests should make successful DELETE request" time="0.004">
+    </testcase>
+    <testcase classname="RestServices DELETE requests should throw error on failed DELETE request" name="RestServices DELETE requests should throw error on failed DELETE request" time="0.004">
+    </testcase>
+    <testcase classname="RestServices DELETE requests should throw error on failed DELETE request with plain text" name="RestServices DELETE requests should throw error on failed DELETE request with plain text" time="0.002">
+    </testcase>
+    <testcase classname="RestServices Error handling should handle non-JSON error responses" name="RestServices Error handling should handle non-JSON error responses" time="0.002">
+    </testcase>
+    <testcase classname="RestServices Error handling should handle malformed JSON in error response" name="RestServices Error handling should handle malformed JSON in error response" time="0.002">
+    </testcase>
+    <testcase classname="RestServices should merge custom headers with defaults" name="RestServices should merge custom headers with defaults" time="0.005">
+    </testcase>
+  </testsuite>
+  <testsuite name="StoreService" errors="0" failures="0" skipped="0" timestamp="2025-12-10T03:30:29" time="2.26" tests="1">
+    <testcase classname="StoreService getStore should fetch a store by id" name="StoreService getStore should fetch a store by id" time="0.025">
+    </testcase>
+  </testsuite>
+  <testsuite name="ReviewService" errors="0" failures="0" skipped="0" timestamp="2025-12-10T03:30:30" time="1.6" tests="5">
+    <testcase classname="ReviewService getProductReviews should fetch product reviews" name="ReviewService getProductReviews should fetch product reviews" time="0.023">
+    </testcase>
+    <testcase classname="ReviewService createProductReview should create a product review" name="ReviewService createProductReview should create a product review" time="0.006">
+    </testcase>
+    <testcase classname="ReviewService createProductReview should create a review without comment" name="ReviewService createProductReview should create a review without comment" time="0.005">
+    </testcase>
+    <testcase classname="ReviewService updateProductReview should update a product review" name="ReviewService updateProductReview should update a product review" time="0.007">
+    </testcase>
+    <testcase classname="ReviewService deleteReview should delete a review" name="ReviewService deleteReview should delete a review" time="0.005">
+    </testcase>
+  </testsuite>
+  <testsuite name="OrderService" errors="0" failures="0" skipped="0" timestamp="2025-12-10T03:30:30" time="2.049" tests="10">
+    <testcase classname="OrderService getUserOrders should fetch user orders as array" name="OrderService getUserOrders should fetch user orders as array" time="0.044">
+    </testcase>
+    <testcase classname="OrderService getUserOrders should handle response with data property" name="OrderService getUserOrders should handle response with data property" time="0.003">
+    </testcase>
+    <testcase classname="OrderService getSellerOrders should fetch seller orders" name="OrderService getSellerOrders should fetch seller orders" time="0.008">
+    </testcase>
+    <testcase classname="OrderService getOrderById should fetch order by id" name="OrderService getOrderById should fetch order by id" time="0.004">
+    </testcase>
+    <testcase classname="OrderService createOrder should create a new order" name="OrderService createOrder should create a new order" time="0.004">
+    </testcase>
+    <testcase classname="OrderService updateOrderStatus should update order status" name="OrderService updateOrderStatus should update order status" time="0.004">
+    </testcase>
+    <testcase classname="OrderService markAsPaid should mark order as paid" name="OrderService markAsPaid should mark order as paid" time="0.003">
+    </testcase>
+    <testcase classname="OrderService markAsShipped should mark order as shipped" name="OrderService markAsShipped should mark order as shipped" time="0.004">
+    </testcase>
+    <testcase classname="OrderService markAsDelivered should mark order as delivered" name="OrderService markAsDelivered should mark order as delivered" time="0.004">
+    </testcase>
+    <testcase classname="OrderService cancelOrder should cancel order" name="OrderService cancelOrder should cancel order" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="Inactivity Timer" errors="0" failures="0" skipped="0" timestamp="2025-12-10T03:30:29" time="2.549" tests="7">
+    <testcase classname="Inactivity Timer startInactivityTimer should add event listeners" name="Inactivity Timer startInactivityTimer should add event listeners" time="0.051">
+    </testcase>
+    <testcase classname="Inactivity Timer startInactivityTimer should logout user after 15 minutes of inactivity" name="Inactivity Timer startInactivityTimer should logout user after 15 minutes of inactivity" time="0.011">
+    </testcase>
+    <testcase classname="Inactivity Timer startInactivityTimer should not logout if user is not authenticated" name="Inactivity Timer startInactivityTimer should not logout if user is not authenticated" time="0.009">
+    </testcase>
+    <testcase classname="Inactivity Timer startInactivityTimer should reset timer on user activity" name="Inactivity Timer startInactivityTimer should reset timer on user activity" time="0.01">
+    </testcase>
+    <testcase classname="Inactivity Timer stopInactivityTimer should remove event listeners" name="Inactivity Timer stopInactivityTimer should remove event listeners" time="0.01">
+    </testcase>
+    <testcase classname="Inactivity Timer stopInactivityTimer should clear timeout" name="Inactivity Timer stopInactivityTimer should clear timeout" time="0.005">
+    </testcase>
+    <testcase classname="Inactivity Timer stopInactivityTimer should not throw when called multiple times" name="Inactivity Timer stopInactivityTimer should not throw when called multiple times" time="0.005">
+    </testcase>
+  </testsuite>
+  <testsuite name="Ownership Guard" errors="0" failures="0" skipped="0" timestamp="2025-12-10T03:30:29" time="2.758" tests="4">
+    <testcase classname="Ownership Guard requireProductOwnership should return true when user is seller and owns product" name="Ownership Guard requireProductOwnership should return true when user is seller and owns product" time="0.034">
+    </testcase>
+    <testcase classname="Ownership Guard requireProductOwnership should return false when user is not seller" name="Ownership Guard requireProductOwnership should return false when user is not seller" time="0.006">
+    </testcase>
+    <testcase classname="Ownership Guard requireProductOwnership should redirect to /unauthorized when user does not own product" name="Ownership Guard requireProductOwnership should redirect to /unauthorized when user does not own product" time="0.01">
+    </testcase>
+    <testcase classname="Ownership Guard requireProductOwnership should check product ownership with correct productId" name="Ownership Guard requireProductOwnership should check product ownership with correct productId" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="CartStore" errors="0" failures="0" skipped="0" timestamp="2025-12-10T03:30:30" time="2.66" tests="21">
+    <testcase classname="CartStore addItem should add a new item to cart" name="CartStore addItem should add a new item to cart" time="0.037">
+    </testcase>
+    <testcase classname="CartStore addItem should increment quantity for existing item" name="CartStore addItem should increment quantity for existing item" time="0.01">
+    </testcase>
+    <testcase classname="CartStore addItem should throw error when quantity exceeds stock" name="CartStore addItem should throw error when quantity exceeds stock" time="0.053">
+    </testcase>
+    <testcase classname="CartStore addItem should throw error when adding to existing item exceeds stock" name="CartStore addItem should throw error when adding to existing item exceeds stock" time="0.008">
+    </testcase>
+    <testcase classname="CartStore addItem should save to localStorage after adding" name="CartStore addItem should save to localStorage after adding" time="0.004">
+    </testcase>
+    <testcase classname="CartStore updateQuantity should update item quantity" name="CartStore updateQuantity should update item quantity" time="0.004">
+    </testcase>
+    <testcase classname="CartStore updateQuantity should remove item when quantity is 0" name="CartStore updateQuantity should remove item when quantity is 0" time="0.005">
+    </testcase>
+    <testcase classname="CartStore updateQuantity should remove item when quantity is negative" name="CartStore updateQuantity should remove item when quantity is negative" time="0.001">
+    </testcase>
+    <testcase classname="CartStore updateQuantity should throw error when quantity exceeds stock" name="CartStore updateQuantity should throw error when quantity exceeds stock" time="0.006">
+    </testcase>
+    <testcase classname="CartStore updateQuantity should not throw error for non-existent item" name="CartStore updateQuantity should not throw error for non-existent item" time="0.004">
+    </testcase>
+    <testcase classname="CartStore removeItem should remove item from cart" name="CartStore removeItem should remove item from cart" time="0.003">
+    </testcase>
+    <testcase classname="CartStore removeItem should save to localStorage after removing" name="CartStore removeItem should save to localStorage after removing" time="0.003">
+    </testcase>
+    <testcase classname="CartStore clear should clear all items" name="CartStore clear should clear all items" time="0.003">
+    </testcase>
+    <testcase classname="CartStore clear should save to localStorage after clearing" name="CartStore clear should save to localStorage after clearing" time="0.001">
+    </testcase>
+    <testcase classname="CartStore totalItems should return 0 for empty cart" name="CartStore totalItems should return 0 for empty cart" time="0.002">
+    </testcase>
+    <testcase classname="CartStore totalItems should return correct total items" name="CartStore totalItems should return correct total items" time="0.011">
+    </testcase>
+    <testcase classname="CartStore totalPrice should return 0 for empty cart" name="CartStore totalPrice should return 0 for empty cart" time="0.002">
+    </testcase>
+    <testcase classname="CartStore totalPrice should calculate correct total price" name="CartStore totalPrice should calculate correct total price" time="0.002">
+    </testcase>
+    <testcase classname="CartStore loadFromStorage should load items from localStorage" name="CartStore loadFromStorage should load items from localStorage" time="0.003">
+    </testcase>
+    <testcase classname="CartStore loadFromStorage should handle invalid JSON in localStorage" name="CartStore loadFromStorage should handle invalid JSON in localStorage" time="0.003">
+    </testcase>
+    <testcase classname="CartStore loadFromStorage should handle null in localStorage" name="CartStore loadFromStorage should handle null in localStorage" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="AuthService" errors="0" failures="0" skipped="0" timestamp="2025-12-10T03:30:30" time="2.77" tests="24">
+    <testcase classname="AuthService setToken should store token in localStorage" name="AuthService setToken should store token in localStorage" time="0.024">
+    </testcase>
+    <testcase classname="AuthService setToken should store both tokens when supabase token provided" name="AuthService setToken should store both tokens when supabase token provided" time="0.007">
+    </testcase>
+    <testcase classname="AuthService getToken should retrieve token from localStorage" name="AuthService getToken should retrieve token from localStorage" time="0.004">
+    </testcase>
+    <testcase classname="AuthService getToken should return null when no token exists" name="AuthService getToken should return null when no token exists" time="0.003">
+    </testcase>
+    <testcase classname="AuthService getSupabaseToken should retrieve supabase token from localStorage" name="AuthService getSupabaseToken should retrieve supabase token from localStorage" time="0.005">
+    </testcase>
+    <testcase classname="AuthService getSupabaseToken should return null when no supabase token exists" name="AuthService getSupabaseToken should return null when no supabase token exists" time="0.003">
+    </testcase>
+    <testcase classname="AuthService removeToken should remove all auth tokens from localStorage" name="AuthService removeToken should remove all auth tokens from localStorage" time="0.005">
+    </testcase>
+    <testcase classname="AuthService isAuthenticated should return true when token exists" name="AuthService isAuthenticated should return true when token exists" time="0.004">
+    </testcase>
+    <testcase classname="AuthService isAuthenticated should return false when no token exists" name="AuthService isAuthenticated should return false when no token exists" time="0.005">
+    </testcase>
+    <testcase classname="AuthService setUser should store user in localStorage" name="AuthService setUser should store user in localStorage" time="0.003">
+    </testcase>
+    <testcase classname="AuthService getUser should retrieve user from localStorage" name="AuthService getUser should retrieve user from localStorage" time="0.002">
+    </testcase>
+    <testcase classname="AuthService getUser should return null when no user exists" name="AuthService getUser should return null when no user exists" time="0.003">
+    </testcase>
+    <testcase classname="AuthService getUser should return null when user data is invalid JSON" name="AuthService getUser should return null when user data is invalid JSON" time="0.003">
+    </testcase>
+    <testcase classname="AuthService logout should call removeToken" name="AuthService logout should call removeToken" time="0.002">
+    </testcase>
+    <testcase classname="AuthService logout should clear all auth data" name="AuthService logout should clear all auth data" time="0.002">
+    </testcase>
+    <testcase classname="AuthService login should call RestServices with correct parameters" name="AuthService login should call RestServices with correct parameters" time="0.005">
+    </testcase>
+    <testcase classname="AuthService login should store tokens and user on successful login" name="AuthService login should store tokens and user on successful login" time="0.006">
+    </testcase>
+    <testcase classname="AuthService register should call RestServices with correct parameters" name="AuthService register should call RestServices with correct parameters" time="0.004">
+    </testcase>
+    <testcase classname="AuthService register should store tokens and user on successful registration" name="AuthService register should store tokens and user on successful registration" time="0.016">
+    </testcase>
+    <testcase classname="AuthService signInWithGoogle should throw when Supabase returns error" name="AuthService signInWithGoogle should throw when Supabase returns error" time="0.069">
+    </testcase>
+    <testcase classname="AuthService signInWithGoogle should succeed when Supabase returns no error" name="AuthService signInWithGoogle should succeed when Supabase returns no error" time="0.003">
+    </testcase>
+    <testcase classname="AuthService handleOAuthCallback should throw when session missing" name="AuthService handleOAuthCallback should throw when session missing" time="0.103">
+    </testcase>
+    <testcase classname="AuthService handleOAuthCallback should throw when getSession returns error" name="AuthService handleOAuthCallback should throw when getSession returns error" time="0.103">
+    </testcase>
+    <testcase classname="AuthService handleOAuthCallback should login with supabase token when session present" name="AuthService handleOAuthCallback should login with supabase token when session present" time="0.106">
+    </testcase>
+  </testsuite>
+  <testsuite name="Route Guards" errors="0" failures="0" skipped="0" timestamp="2025-12-10T03:30:30" time="2.518" tests="12">
+    <testcase classname="Route Guards requireAuth should return true when user is authenticated" name="Route Guards requireAuth should return true when user is authenticated" time="0.027">
+    </testcase>
+    <testcase classname="Route Guards requireAuth should redirect to /auth when user is not authenticated" name="Route Guards requireAuth should redirect to /auth when user is not authenticated" time="0.005">
+    </testcase>
+    <testcase classname="Route Guards requireAuth should wait for loading to complete" name="Route Guards requireAuth should wait for loading to complete" time="0.104">
+    </testcase>
+    <testcase classname="Route Guards requireRole should return true when user has MODERATOR role" name="Route Guards requireRole should return true when user has MODERATOR role" time="0.004">
+    </testcase>
+    <testcase classname="Route Guards requireRole should return true when user has SELLER role" name="Route Guards requireRole should return true when user has SELLER role" time="0.004">
+    </testcase>
+    <testcase classname="Route Guards requireRole should redirect to /unauthorized when user lacks MODERATOR role" name="Route Guards requireRole should redirect to /unauthorized when user lacks MODERATOR role" time="0.004">
+    </testcase>
+    <testcase classname="Route Guards requireRole should redirect to /unauthorized when user lacks SELLER role" name="Route Guards requireRole should redirect to /unauthorized when user lacks SELLER role" time="0.003">
+    </testcase>
+    <testcase classname="Route Guards requireRole should redirect to /auth when user is not authenticated" name="Route Guards requireRole should redirect to /auth when user is not authenticated" time="0.003">
+    </testcase>
+    <testcase classname="Route Guards requireSeller should call requireRole with SELLER" name="Route Guards requireSeller should call requireRole with SELLER" time="0.002">
+    </testcase>
+    <testcase classname="Route Guards requireSeller should return false when user is not seller" name="Route Guards requireSeller should return false when user is not seller" time="0.001">
+    </testcase>
+    <testcase classname="Route Guards requireModerator should call requireRole with MODERATOR" name="Route Guards requireModerator should call requireRole with MODERATOR" time="0.001">
+    </testcase>
+    <testcase classname="Route Guards requireModerator should return false when user is not moderator" name="Route Guards requireModerator should return false when user is not moderator" time="0.001">
+    </testcase>
+  </testsuite>
+</testsuites>

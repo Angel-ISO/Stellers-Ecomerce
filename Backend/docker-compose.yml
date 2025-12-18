@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  backend:
+    container_name: stellers-backend
+    build: .
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    restart: unless-stopped
+    networks:
+      - stellers-network
+
+networks:
+  stellers-network:
+    name: stellers-network
+    driver: bridge
